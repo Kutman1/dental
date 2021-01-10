@@ -1,0 +1,42 @@
+.search {
+  width: 269px;
+
+  .MuiInputBase-root {
+    box-sizing: border-box;
+    border-radius: 26px;
+    font-size: 14px;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px 0px #c4c4c4;
+  }
+
+  .MuiOutlinedInput-notchedOutline {
+    border: none;
+  }
+
+  .MuiIconButton-root {
+    color: #DADADA;
+    margin-top: 2px;
+  }
+
+  .MuiInputBase-root.Mui-focused {
+    background-color: #fff;
+  }
+}
+.jodit-wysiwyg {
+  min-height: 70vh!important;
+}
+
+.news-item {
+  margin-top: 50px;
+  .MuiCardContent-root {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+}
+
+.news-time {
+  svg {
+    margin-bottom: -1.5px;
+    margin-right: 5px;
+  }
+}

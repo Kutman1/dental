@@ -1,0 +1,481 @@
+@import "../../scss/vars";
+
+.authorization {
+  font-family: 'Rubik', sans-serif;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: linear-gradient(90deg, #1092CD 0%, #005A9D 100%);
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .MuiButton-contained {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none !important;
+  }
+
+  button {
+    width: 100%;
+    max-width: 180px !important;
+
+  }
+
+  &-wrap {
+    text-align: center;
+
+    .awaiting-title {
+      font-size: 22px;
+      font-weight: bold;
+      color: #ffffff;
+      margin-top: 40px;
+      margin-bottom: 22px;
+    }
+
+    .awaiting-description {
+      font-size: 22px;
+      color: #ffffff;
+    }
+
+    .authorization__buttons {
+      margin-top: 40px;
+
+      button {
+        width: 100%;
+
+        &:hover {
+          color: #fff;
+          border: 1px solid #fff;
+        }
+      }
+
+      div {
+        cursor: pointer;
+
+        &:first-child {
+          margin-bottom: 16px;
+
+          a {
+            color: #1682E3;
+          }
+
+          background-color: #fff;
+        }
+
+        a, span {
+          font-weight: bold;
+          line-height: 36px;
+          text-decoration: none;
+          color: #ffffff;
+        }
+
+        border-radius: 40px;
+        height: 36px;
+        background: transparent;
+        border: 1px solid #FFFFFF;
+
+      }
+    }
+  }
+
+  .MuiInputBase-input {
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  &-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+
+  .app-language {
+    margin-top: 10px;
+
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-left: 33px;
+        font-size: 20px;
+        color: #D8D8D8;
+
+        &.languag-active {
+          color: #fff;
+        }
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .install-application {
+    margin-top: 33px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+
+    .app-icon {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      div {
+        margin-left: 28px;
+      }
+    }
+  }
+
+  &__content {
+    max-width: 414px;
+    width: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 25px;
+    padding-top: 46px;
+    padding-bottom: 25px;
+    position: relative;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+
+    .authorization__content-back {
+      position: absolute;
+      left: 30px;
+      top: 20px;
+      background-color: #0E8AC7;
+      width: 40px;
+      height: 40px;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+
+  &__text {
+    font-family: "AristaProTrial";
+    font-size: 16px;
+    color: #375A9C;
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
+  &__logo {
+    text-align: center;
+  }
+
+  .phoneContent, .authorizationRow {
+    overflow: hidden;
+
+    .MuiInputLabel-shrink {
+      transform: translate(0, -2px) scale(1);
+      right: 0;
+      font-size: 13px;
+      color: rgba(0, 0, 0, 0.54);
+    }
+
+    .MuiInputBase-input {
+      text-indent: 5px;
+    }
+
+    .phoneContent__btn {
+      margin: auto;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+      }
+
+      button {
+        width: 100%;
+        font-weight: bold;
+      }
+
+      .or {
+        position: relative;
+        width: 100%;
+        display: flex;
+        margin: 10px 0;
+        align-items: center;
+
+        span {
+          margin: 0 10px;
+          color: #1682E3;
+          text-transform: uppercase;
+        }
+
+        .line {
+          background-color: #C4C4C4;
+          width: 100%;
+          height: 1px;
+        }
+      }
+    }
+
+    .MuiFormHelperText-root {
+      text-align: center;
+      left: 0;
+      right: 0;
+    }
+
+    .MuiFormControl-root {
+      margin-bottom: 20px;
+    }
+
+    .authorization-button__wrap {
+      text-align: center;
+
+      button {
+        width: 100%;
+        margin-bottom: 15px;
+
+        .register-btn {
+          padding: 0 20px;
+
+          .MuiButton-label {
+            font-size: 15px !important;
+          }
+        }
+      }
+
+      .MuiCircularProgress-colorPrimary {
+        width: 15px !important;
+        height: 15px !important;
+      }
+
+      svg {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+
+  &__form, .authorization-wrap {
+    max-width: 271px;
+    margin: auto;
+    position: relative;
+
+    .authorization__form-back {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      left: 30px;
+      top: 34px;
+      background-color: #0E8AC7;
+    }
+  }
+
+  .verification {
+    .confirmEmail {
+      p {
+        margin: 0;
+      }
+
+      input {
+        text-indent: 0 !important;
+
+      }
+    }
+
+    .MuiFormHelperText-root {
+      width: 100%;
+      color: #333;
+      margin: 0;
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    .MuiFormControl-root {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.special-label {
+  display: none;
+}
+
+.react-tel-input {
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 0.87);
+  cursor: text;
+  display: inline-flex;
+  position: relative;
+  font-size: 1rem;
+  box-sizing: border-box;
+  align-items: center;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.1876em;
+  letter-spacing: 0.00938em;
+  width: 100%;
+
+  input {
+    font: inherit;
+    color: currentColor;
+    width: 100%;
+    border: 0;
+    height: 1.1876em;
+    margin: 0;
+    display: block;
+    padding: 6px 0 7px;
+    min-width: 0;
+    background: none;
+    box-sizing: content-box;
+    animation-name: mui-auto-fill-cancel;
+    letter-spacing: inherit;
+    animation-duration: 10ms;
+    -webkit-tap-highlight-color: transparent;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+
+    &:focus {
+      outline: none;
+      border-bottom: 2px solid $main-color;
+    }
+
+    &:hover {
+    }
+  }
+}
+
+.mobile-auth {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .mobile-auth {
+    color: #ffffff;
+    display: block;
+    width: 100%;
+
+    a {
+      text-decoration: none;
+    }
+
+    &__wrapper {
+      width: 100%;
+      padding: 0 32px;
+    }
+
+    &__title {
+      color: #ffffff;
+      font-size: 34px;
+      letter-spacing: -0.3px;
+      font-weight: bold;
+    }
+
+    label {
+      color: #D9D9D9;
+      font-size: 15px;
+    }
+
+    input {
+      color: #ffffff;
+      font-size: 17px;
+    }
+
+    &__btn {
+      text-align: center;
+      margin-top: 50px;
+
+      button {
+        width: 100%;
+        max-width: 100% !important;
+        background-color: #fff !important;
+        font-weight: bold;
+        font-size: 15px;
+        text-align: center;
+        letter-spacing: 0.03375px;
+        color: #056AAB;
+        height: 54px;
+        line-height: 54px;
+        border-radius: 50px;
+      }
+
+      button:disabled,
+      button[disabled] {
+        background: #AFAFAF!important;
+        color: #757575!important;
+      }
+    }
+
+    .or {
+      position: relative;
+      width: 100%;
+      display: flex;
+      margin: 20px 0;
+      align-items: center;
+
+      span {
+        margin: 0 10px;
+        color: #D9D9D9;
+        text-transform: uppercase;
+      }
+
+      .line {
+        background-color: #C4C4C4;
+        width: 100%;
+        height: 1px;
+      }
+    }
+  }
+  .authorization {
+    &__content {
+      display: none;
+    }
+  }
+  .react-tel-input input {
+    border-bottom: 0.5px solid #fff;
+
+    &:focus {
+      border-bottom: 0.5px solid #fff;
+    }
+  }
+  .MuiFormControl-fullWidth {
+    margin-top: 20px !important;
+  }
+  .MuiFormLabel-root.Mui-focused {
+    color: #D9D9D9 !important;
+  }
+  .MuiInput-underline:after {
+    border-bottom: 0.5px solid #fff !important;
+  }
+  .MuiInput-underline:before {
+    border-bottom: 0.5px solid #fff !important;
+  }
+  .MuiInput-underline:hover:not(.Mui-disabled):before {
+    border-bottom: 0.5px solid #fff !important;
+  }
+  .register-btn {
+    button {
+      background-color: transparent!important;
+      border: 1px solid #fff;
+      color: #ffffff;
+    }
+  }
+}
+
+
+
+

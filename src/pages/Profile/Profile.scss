@@ -1,0 +1,143 @@
+.profile {
+  padding: 20px;
+  padding-top: 15px;
+  .title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .profile__avatar-wrap {
+    position: relative;
+    display: block;
+    .avatar-overlay {
+      cursor: pointer;
+      position: absolute;
+      background: rgba(0, 0, 0, 0.5);
+      left: 50%;
+      transform: translate(-50%);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+      width: 130px;
+      height: 130px;
+    }
+  }
+
+  #profile__avatar {
+    width: 130px;
+    height: 130px;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: 55px;
+    position: relative;
+    text-transform: uppercase;
+    .avatar-overlay {
+      position: absolute;
+      z-index: 999;
+    }
+  }
+.profile__avatar {
+  margin-bottom: 50px;
+  cursor: pointer;
+  svg {
+    margin-left: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+    path {
+      fill: #1682E3;
+
+    }
+  }
+}
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .MuiSvgIcon-root {
+      margin-left: 20px;
+      color: #2290E0;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+
+  .staffModalLink {
+    text-transform: none;
+    font-size: 17px;
+    font-weight: 600;
+  }
+
+  .MuiFormLabel-root.Mui-disabled, .MuiInputBase-root.Mui-disabled {
+    color: #333333;
+  }
+
+  .MuiCheckbox-colorPrimary.Mui-disabled, .MuiFormControlLabel-label.Mui-disabled {
+    color: #777777;
+  }
+
+  .MuiInput-underline.Mui-disabled:before {
+    border-bottom-style: solid;
+  }
+
+  .addStaffModal__subTitle, .addStaffModal__h3 {
+    opacity: 1 !important;
+  }
+
+  label + .MuiInput-formControl {
+    margin-top: 22px;
+  }
+
+  .MuiInputBase-input {
+    padding-bottom: 10px;
+  }
+}
+.avatar__list {
+  background: #fff;
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  display: inline-block;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%);
+  margin-top: -20px;
+  cursor: pointer;
+  z-index: 999;
+  ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  ul {
+    padding: 20px 18px;
+    li, label {
+      cursor: pointer;
+    }
+    .delete-photo {
+      margin-top: 24px;
+      color: #FF3B30
+    }
+  }
+}
+.profile-position {
+  .MuiInput-underline:before {
+    position: static!important;
+    border: 0!important;
+  }
+}
+.boxForm {
+  .MuiFormControl-root {
+    margin-bottom: 30px;
+  }
+}
+

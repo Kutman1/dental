@@ -1,0 +1,80 @@
+@import "./scss/vars";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333333;
+  background-color: #E5E5E5;
+  overflow-x: hidden;
+}
+
+//custom libs
+
+.MuiInput-underline:after {
+  border-bottom: 2px solid $main-color!important;
+
+}
+.MuiInput-underline {
+
+}
+
+.MuiButton-containedPrimary {
+  background-color: $main-color!important;
+
+}
+
+.app-wrapper {
+  display: flex;
+  width: 100%;
+}
+.home {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  &-wrap {
+    padding: 20px 30px;
+  }
+}
+.modalButtonGroup {
+  display: flex;
+  justify-content: center;
+  button {
+    margin-left: 15px;
+    font-weight: bold;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.date-wrap {
+  display: flex;
+  align-items: center;
+
+  .selected-time {
+    font-size: 12px;
+  }
+  .MuiSelect-select.MuiSelect-select {
+    label + .MuiInput-formControl {
+      margin-top: 0!important;
+    }
+  }
+}
+
+.slot-date {
+  label + .MuiInput-formControl {
+    margin-top: 5px;
+  }
+
+  margin-left: 15px!important;
+}

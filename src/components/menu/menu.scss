@@ -1,0 +1,129 @@
+.menu {
+  width: 200px;
+  background: #1B73C2;
+  z-index: 999;
+  min-height: 100vh;
+  text-align: center;
+  position: relative;
+.profile-menu {
+  position: absolute;
+  display: flex;
+  bottom: 50px;
+  padding: 0 20px;
+  color: #FBFBFB;
+  cursor: pointer;
+  div {
+    text-align: left;
+    font-weight: 500;
+  }
+  .MuiAvatar-root {
+    margin-right: 15px;
+  }
+}
+  &__wrap {
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+}
+.logo {
+  padding-top: 20px;
+  height: 64px;
+  svg {
+    margin-top: 21px;
+    display: block;
+  }
+}
+.menuNav {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  border-radius: 4px;
+  transition: all .3s ease;
+  margin-bottom: 2px;
+  padding: 7px 10px;
+  span {
+    font-weight: bold;
+  }
+  svg {
+    path {
+      fill: #fff;
+    }
+  }
+  &:hover,
+  &.active {
+    background-color: #fff;
+    color: #1B73C2;
+    svg {
+      path {
+        fill: #1B73C2;
+      }
+    }
+  }
+}
+
+.MuiListItemIcon-root {
+  min-width: 35px!important;
+}
+.MuiListItem-gutters {
+  padding: 0!important;
+}
+
+
+.addStaffModal {
+  .checkbox {
+    margin-bottom: 0;
+  }
+  color: #333333;
+
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+  .addStaffModal__content {
+    padding: 40px 40px 20px;
+  }
+  &__photo {
+    text-align: center;
+    margin-bottom: 45px;
+    cursor: pointer;
+    span {
+      color: #1682E3;
+      display: block;
+      font-size: 14px;
+      letter-spacing: 0.0120588em;
+      font-weight: normal;
+      margin-top: 13px;
+    }
+  }
+  &__form {
+    .MuiFormControl-root {
+      margin-bottom: 28px;
+    }
+  }
+  &__subTitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+  &__h3 {
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .addStaffModalLink {
+    color: #2290E0;
+    margin-bottom: 20px;
+    margin-left: -6px;
+    display: block;
+    text-transform: none;
+    .MuiButton-label {
+      display: flex;
+    }
+  }
+}
+
+.addNewPosition {
+  .MuiButton-root {
+    text-transform: none;
+  }
+}
