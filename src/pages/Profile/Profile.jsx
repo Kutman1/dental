@@ -15,10 +15,13 @@ import EditSharpIcon from '@material-ui/icons/EditSharp';
 import Box from "@material-ui/core/Box";
 import Button from "@material-ui/core/Button";
 import CircularProgress from "@material-ui/core/CircularProgress";
+import {useLocation} from "react-router";
 
-const Profile = () => {
+const Profile = ({ bg }) => {
     const user = useSelector(state => state.auth.user);
     const request = useSelector(state => state.auth.request);
+    const location = useLocation().pathname;
+    console.log(location)
     const dispatch = useDispatch();
     const [img, setImg] = useState('');
     const [editBoolean, setEditBoolean] = useState(false);
@@ -41,7 +44,7 @@ const Profile = () => {
     }, [dispatch, img]);
     console.log(request)
     return (
-        <div className="profile-page profile">
+        <div className={`profile-page profile ${location === '/profile' && `fullBg`}`}>
             <div className="profile__avatar">
                 <label htmlFor="photo"  className="profile__avatar-wrap">
                     {user.photo &&

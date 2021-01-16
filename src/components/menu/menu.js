@@ -24,7 +24,7 @@ const Menu = () => {
         <>
             <div className="menu">
                 <div className="logo">
-                    <Link to="/">IQ Clinic</Link>
+                    <Link to="/">Dr. Zarip</Link>
                     <LineIcon/>
                 </div>
                 <div className="menu__wrap">
@@ -84,7 +84,7 @@ const Menu = () => {
                             src={user.photo}
                             className="conferenceBox__avatar"
                             style={{backgroundColor: randomColor()}}>
-                        {user.fullName.substr(0, 1)}
+                        {user.fullName  && user.fullName.substr(0, 1)}
                     </Avatar>
                     <div>{user.fullName}</div>
                 </div>

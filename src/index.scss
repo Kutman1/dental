@@ -78,3 +78,86 @@ body {
 
   margin-left: 15px!important;
 }
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  .content-wrap {
+    margin-bottom: 50px;
+  }
+  .header {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    position: relative;
+    .MuiSpeedDial-directionUp {
+      position: absolute;
+      bottom: 100px;
+      right: 20px;
+    }
+    &__menu {
+      background-color: #fff;
+      position: fixed;
+      z-index: 999;
+      width: 100%;
+      bottom: 0;
+      &-exit {
+        border: .5px solid #c3c3c3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 7px 0;
+        color: #2290e0;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 16px;
+      }
+      &-wrap {
+        border-top: 1px solid rgba(0,0,0,.15);
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+      }
+      &-item {
+        width: 50%;
+        text-align: center;
+        padding: 8px 0;
+        text-decoration: none;
+        &.active {
+          div {
+            color: #2290e0
+          }
+          svg {
+            path {
+              font-weight: bold;
+              fill: #2290e0
+            }
+          }
+        }
+        div {
+          font-size: 12px;
+          font-weight: 600;
+          color: #898989;
+        }
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+
+.MuiSpeedDialAction-staticTooltipLabel {
+  display: block;
+  min-width: 200px!important;
+  padding: 10px 5px!important;
+  text-align: center;
+}

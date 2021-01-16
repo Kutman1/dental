@@ -7,6 +7,7 @@ import Toolbar from "../components/toolbar-news/Toolbar";
 import News from "../pages/news/News";
 import AppointmentApp from "../components/Appointment";
 import Test from "../components/test";
+import Profile from "../pages/Profile/Profile";
 
 export const routes = [
     {
@@ -48,5 +49,9 @@ export const routes = [
     {
         path: '/news',
         component: News
+    },
+    {
+        path: '/profile',
+        component: Profile
     }
 ];

@@ -91,7 +91,7 @@ const Register = () => {
             <div className="authorization-wrapper">
                 <div className="authorization__content">
                     <div className="authorization__logo">
-                        <img src={logo} alt="Логотип"/>
+                       Dr.Zarip
                     </div>
                     {/* <div className="authorization__text">Современная система для совместной работы</div> */}
                     <div className="authorization__form">

@@ -1,21 +1,4 @@
-import axios from "axios";
-
-
-const instance = axios.create({
-    baseURL: "http://localhost:5000/api",
-    headers: {'Access-Control-Allow-Origin': "*"},
-    mode: 'cors',
-});
-
-instance.interceptors.request.use(
-    config => {
-        config.headers.authorization = localStorage.getItem("token");
-        return config;
-    },
-    error => {
-        return Promise.reject(error)
-    }
-);
+import instance from "../instance";
 
 export default {
     createRecord: (body) => instance.post('/add/record', body),

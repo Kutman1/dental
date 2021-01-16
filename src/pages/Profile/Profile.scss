@@ -141,3 +141,19 @@
   }
 }
 
+.fullBg {
+  background-color: #fff;
+  height: 100vh;
+  .MuiInput-underline:before {
+    border-bottom: 1px solid #ccc!important;
+  }
+  .MuiInput-underline:after {
+    border-bottom: 0.5px solid #2290E0 !important;
+  }
+  .MuiInput-underline:before {
+    border-bottom: 0.5px solid #ccc !important;
+  }
+  .MuiInput-underline:hover:not(.Mui-disabled):before {
+    border-bottom: 0.5px solid #2290E0 !important;
+  }
+}

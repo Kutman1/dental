@@ -1,3 +1,7 @@
+.recordsWrap {
+  display: flex;
+  flex-wrap: wrap;
+}
 .conferenceBox {
   background: #FFFFFF;
   border-radius: 10px;
@@ -9,9 +13,11 @@
   font-size: 12px;
   min-height: 148px;
   cursor: pointer;
+  margin-bottom: 20px;
   color: #333333;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   position: relative;
+  margin-right: 25px;
 
   a {
     text-decoration: none;
@@ -197,6 +203,11 @@ a.conferenceLink {
 .records {
   h2 {
     margin-bottom: 30px;
+  }
+  &__date {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
   }
 }
 .empty-records {
